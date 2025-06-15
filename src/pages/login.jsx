@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate, Link } from 'react-router-dom';
-import '../style/login.css'; // Make sure the path matches your structure
+import '../style/login.css';
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -12,7 +12,7 @@ const Login = () => {
   const togglePassword = () => setShowPassword(prev => !prev);
 
   const onSubmit = (data) => {
-    const savedData = localStorage.getItem('signupData');
+    const savedData = localStorage.getItem('user'); // ✅ Fixed key
 
     if (!savedData) {
       setLoginError('No user found. Please sign up first.');

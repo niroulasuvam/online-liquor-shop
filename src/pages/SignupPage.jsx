@@ -18,7 +18,7 @@ function SignupPage() {
 
     localStorage.setItem('user', JSON.stringify({ email, password }));
     alert("Signup successful!");
-    navigate('/login');
+    navigate('/'); // Redirects to login ("/")
   };
 
   return (
