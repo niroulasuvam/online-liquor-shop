@@ -1,0 +1,157 @@
+/* Whole page background */
+.login-body {
+  background-color: #fffdd0; /* Cream color */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login box */
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #971111;
+  margin-bottom: 25px;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  flex: 1;
+}
+
+.password-field .toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #555;
+  user-select: none;
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #971111;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #7d0f0f;
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.alert-box {
+  background-color: #ffe0e0;
+  color: #b30000;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Divider */
+.or-divider {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Social login buttons */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.google-btn,
+.apple-btn {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.apple-btn:hover {
+  background-color: #dcdcdc;
+}
+
+/* Links below form */
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+}
+
+.forgot-password,
+.signup-button {
+  color: #971111;
+  text-decoration: none;
+}
+
+.forgot-password:hover,
+.signup-button:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85em;
+  color: #888;
+}
